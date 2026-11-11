@@ -259,7 +259,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     <p style={{ fontSize: '0.75rem', color: '#9ca3af', marginTop: '0.25rem' }}>
                         {template.category}
                     </p>
-                    {template.default_amount > 0 && (
+                    {(template.default_amount ?? 0) > 0 && (
                         <p style={{ fontSize: '0.875rem', color: '#374151', marginTop: '0.25rem' }}>
                             ₦{Number(template.default_amount).toLocaleString()}
                         </p>

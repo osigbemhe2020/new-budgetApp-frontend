@@ -492,7 +492,7 @@ export function TaxPage() {
                     <div>
                       <Label>TIN (Tax Identification Number)</Label>
                       <Input value={tin} onChange={(e) => setTin(e.target.value)} placeholder="Optional" style={{ marginTop: '0.25rem' }} />
-                      <HelperText>Obtain from FIRS at firs.gov.ng if you don't have one</HelperText>
+                      <HelperText>Obtain from FIRS at firs.gov.ng if you don&apos;t have one</HelperText>
                     </div>
                     <div>
                       <Label>Date of Birth</Label>
