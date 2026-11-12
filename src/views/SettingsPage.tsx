@@ -380,7 +380,7 @@ export function SettingsPage() {
               <SectionIconBox $bg="#dbeafe" $color="#2563eb">
                 <Info size={20} />
               </SectionIconBox>
-              <h3 style={{ fontWeight: 600, color: '#111827' }}>About BudgetFlow</h3>
+              <h3 style={{ fontWeight: 600, color: '#111827' }}>About BudgetWise</h3>
             </FlexRow>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.875rem', color: '#4b5563' }}>
               <p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>

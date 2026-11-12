@@ -53,7 +53,7 @@ function AppContent() {
             animation: 'spin 0.8s linear infinite',
             margin: '0 auto 1rem',
           }} />
-          <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem' }}>Loading BudgetFlow…</p>
+          <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem' }}>Loading BudgetWise…</p>
           <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
         </div>
       </div>

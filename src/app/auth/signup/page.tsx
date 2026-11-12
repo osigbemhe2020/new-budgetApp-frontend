@@ -349,7 +349,7 @@ export default function SignUpPage() {
             }}>
               <TrendingUp size={22} color="#fff" />
             </div>
-            <span style={{ fontSize: '1.5rem', fontWeight: 800, color: '#fff', letterSpacing: '-0.025em' }}>BudgetFlow</span>
+            <span style={{ fontSize: '1.5rem', fontWeight: 800, color: '#fff', letterSpacing: '-0.025em' }}>BudgetWise</span>
           </div>
 
           <h2 style={{ fontSize: '2.5rem', fontWeight: 800, color: '#fff', lineHeight: 1.2, marginBottom: '1rem' }}>
@@ -359,7 +359,7 @@ export default function SignUpPage() {
             </span>
           </h2>
           <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.6, marginBottom: '1rem' }}>
-            Join thousands of users who have taken control of their financial future with BudgetFlow.
+            Join thousands of users who have taken control of their financial future with BudgetWise.
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
@@ -399,7 +399,7 @@ export default function SignUpPage() {
         >
           <Logo>
             <LogoIcon><TrendingUp size={18} color="#fff" /></LogoIcon>
-            <LogoText>BudgetFlow</LogoText>
+            <LogoText>BudgetWise</LogoText>
           </Logo>
 
           <Heading>Create account</Heading>

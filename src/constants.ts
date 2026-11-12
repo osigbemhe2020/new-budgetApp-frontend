@@ -1,4 +1,4 @@
-export const BRAND_NAME = "BudgetFlow";
+export const BRAND_NAME = "BudgetWise";
 export const PRIMARY_BLUE = "#2563EB";
 export const LIGHT_BLUE = "#EFF6FF";
 

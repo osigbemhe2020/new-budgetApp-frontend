@@ -21,7 +21,7 @@ interface AppContextType {
 const AppContext = createContext<AppContextType | null>(null);
 
 export function AppProvider({ children }: { children: ReactNode }) {
-  const [currentPage, setCurrentPage] = useLocalStorage<PageId>("budgetflow_page", "dashboard");
+  const [currentPage, setCurrentPage] = useLocalStorage<PageId>("budgetwise_page", "dashboard");
   const [toasts, setToasts] = useState<Toast[]>([]);
 
   // ── Toasts ─────────────────────────────────────────────────────────────
