@@ -52,7 +52,7 @@ export function DashboardPage() {
           <CardContent style={{ padding: '1.5rem' }}>
             <HeroHeader>
               <div>
-                <UserName>👋 Welcome back, {user?.FullName || "User"}</UserName>
+                <UserName>👋 Welcome back, {user?.username || "User"}</UserName>
               </div>
               {currentCycle && (
                 <CycleTextGroup>

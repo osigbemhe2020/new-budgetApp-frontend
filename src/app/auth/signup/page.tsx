@@ -11,7 +11,7 @@ import { useSignup } from '@/hooks/useAuth';
 import { useRouter } from 'next/navigation';
 
 const schema = z.object({
-  fullName: z.string().min(2, 'Name must be at least 2 characters'),
+  username: z.string().min(2, 'Username must be at least 2 characters'),
   email: z.string().email('Please enter a valid email'),
   password: z.string().min(6, 'Password must be at least 6 characters'),
   confirmPassword: z.string(),
@@ -312,7 +312,7 @@ export default function SignUpPage() {
   const onSubmit = async (data: FormData) => {
     setServerError('');
     try {
-      await signupMutation.mutateAsync({ fullName: data.fullName, email: data.email, password: data.password });
+      await signupMutation.mutateAsync({ username: data.username, email: data.email, password: data.password });
       router.push('/');
     } catch (err: unknown) {
       const error = err as { response?: { data?: { message?: string } } };
@@ -414,18 +414,18 @@ export default function SignUpPage() {
 
           <Form onSubmit={handleSubmit(onSubmit)} id="signup-form">
             <FieldWrapper>
-              <FieldLabel htmlFor="fullName">Full Name</FieldLabel>
+              <FieldLabel htmlFor="username">Username</FieldLabel>
               <InputWrapper>
                 <InputIcon><User size={16} /></InputIcon>
                 <StyledInput
-                  id="fullName"
+                  id="username"
                   type="text"
-                  placeholder="John Doe"
-                  $hasError={!!errors.fullName}
-                  {...register('fullName')}
+                  placeholder="johndoe"
+                  $hasError={!!errors.username}
+                  {...register('username')}
                 />
               </InputWrapper>
-              {errors.fullName && <ErrorText><AlertCircle size={12} />{errors.fullName.message}</ErrorText>}
+              {errors.username && <ErrorText><AlertCircle size={12} />{errors.username.message}</ErrorText>}
             </FieldWrapper>
 
             <FieldWrapper>

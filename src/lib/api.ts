@@ -20,7 +20,7 @@ apiClient.interceptors.request.use((config) => {
 
 // ─── Auth ────────────────────────────────────────────────────────────────────
 export interface SignupPayload {
-  fullName: string;
+  username: string;
   email: string;
   password: string;
 }
@@ -31,13 +31,10 @@ export interface LoginPayload {
 }
 
 export interface AuthUser {
-  id?: number;
-  UserID?: number;
-  FullName?: string;
-  full_name?: string;
-  Email?: string;
-  email?: string;
-  created_at: string;
+  userId: number;
+  username: string;
+  email: string;
+  created_at?: string;
 }
 
 export interface AuthResponse {

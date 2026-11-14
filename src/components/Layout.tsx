@@ -168,8 +168,6 @@ export function Sidebar() {
   const { user } = useAuth();
   const logoutMutation = useLogout();
 
-  // const initials = user?.FullName
-  //   ? user.FullName.split(' ').map((n) => n[0]).join('').slice(0, 2).toUpperCase()
   //   : 'BF';
 
   return (

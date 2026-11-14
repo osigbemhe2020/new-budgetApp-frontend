@@ -152,8 +152,8 @@ export function ProfilePage() {
     ? debts.filter((d) => d.status === 'pending' || d.status === 'active').length
     : 0;
 
-  const displayName = user?.FullName || user?.full_name || "User";
-  const userEmail = user?.Email || user?.email || "";
+  const displayName = user?.username || "User";
+  const userEmail = user?.email || "";
   const initials = displayName
     ? displayName.split(' ').filter(Boolean).map((n) => n[0]).join('').slice(0, 2).toUpperCase() || 'BF'
     : 'BF';

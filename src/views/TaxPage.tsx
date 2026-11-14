@@ -322,8 +322,8 @@ export function TaxPage() {
     
     try {
       await upsertProfile.mutateAsync({
-        full_name: user.FullName || user.full_name || '',
-        email: user.Email || user.email || '',
+        full_name: user.username,
+        email: user.email,
         account_type: accountType,
         tin: tin || undefined,
         date_of_birth: dateOfBirth || undefined,
@@ -469,11 +469,11 @@ export function TaxPage() {
                   <FormGrid>
                     <div>
                       <Label>Full Name</Label>
-                      <ReadOnlyInput value={user?.FullName || ''} disabled style={{ marginTop: '0.25rem' }} />
+                      <ReadOnlyInput value={user?.username || ''} disabled style={{ marginTop: '0.25rem' }} />
                     </div>
                     <div>
                       <Label>Email</Label>
-                      <ReadOnlyInput value={user?.Email || ''} disabled style={{ marginTop: '0.25rem' }} />
+                      <ReadOnlyInput value={user?.email || ''} disabled style={{ marginTop: '0.25rem' }} />
                     </div>
                     <div>
                       <Label>Account Type</Label>
@@ -695,7 +695,7 @@ export function TaxPage() {
                       ✓ Tax document generated successfully
                     </p>
                     <p style={{ fontSize: '0.875rem', color: '#166534', marginBottom: '1rem' }}>
-                      Sent to {user?.Email}
+                      Sent to {user?.email}
                     </p>
                     <Button variant="outline" onClick={() => setShowSuccess(false)} style={{ width: '100%' }}>
                       <Download size={16} style={{ marginRight: '0.5rem' }} />
